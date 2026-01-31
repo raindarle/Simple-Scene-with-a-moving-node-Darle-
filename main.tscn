@@ -5,7 +5,7 @@
 [node name="Main" type="Node2D"]
 
 [node name="HelloWorld" type="Label" parent="."]
-modulate = Color(1.0015246, 1.0015246, 1.0015246, 0)
+modulate = Color(1.0015246, 1.0015246, 1.0015246, 1)
 offset_left = 303.0
 offset_top = 242.0
 offset_right = 868.0
