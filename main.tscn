@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://c63pscwde45ao"]
+
+[ext_resource type="Script" uid="uid://dxctntnqv8ep3" path="res://hello_world.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HelloWorld" type="Label" parent="."]
+modulate = Color(1.0015246, 1.0015246, 1.0015246, 0)
+offset_left = 303.0
+offset_top = 242.0
+offset_right = 868.0
+offset_bottom = 379.0
+theme_override_colors/font_color = Color(18.892157, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Hello World"
+horizontal_alignment = 1
+script = ExtResource("1_ig7tw")
