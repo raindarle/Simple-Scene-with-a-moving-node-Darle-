@@ -21,13 +21,7 @@ This beginner-level Godot project demonstrates a **2D “Hello World” label** 
 - Shake effect on impact.
 
 ## Screenshots
-*(Add screenshots of your running project in a `screenshots` folder in your repo.)*
 
-![Moving Label](screenshots/hello_world_1.png)  
-*Label moving across the screen.*
-
-![Edge Impact Shake](screenshots/hello_world_2.png)  
-*Label shakes slightly when hitting the screen edges.*
 
 ## Instructions to Run
 1. Open **Godot Engine v4.5.1**.  
