@@ -21,6 +21,7 @@ This beginner-level Godot project demonstrates a **2D “Hello World” label** 
 - Shake effect on impact.
 
 ## Screenshots
+<img width="1150" height="646" alt="Screenshot 2026-01-31 at 5 30 55 PM" src="https://github.com/user-attachments/assets/08f82059-cc97-428c-9bbc-f5df32029341" />
 
 
 ## Instructions to Run
