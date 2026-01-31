@@ -1,4 +1,4 @@
-# Simple Scene with a Moving Node
+# Simple Scene with a Moving Node (Darle - F Sat (4:30 PM - 7:00 PM)
 
 ## Description
 This beginner-level Godot project demonstrates a **2D “Hello World” label** moving horizontally across the screen.
