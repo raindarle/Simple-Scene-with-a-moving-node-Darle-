@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://cqktkv1u68ici"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_ig7tw"]
+[ext_resource type="ArrayMesh" uid="uid://cbcyie1dnuj20" path="res://res/primor diff color (4).obj" id="2_0xm2m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_0xm2m"]
+sky_material = SubResource("ProceduralSkyMaterial_ig7tw")
+
+[sub_resource type="Environment" id="Environment_h2yge"]
+background_mode = 2
+sky = SubResource("Sky_0xm2m")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Main" type="Node3D" unique_id=392091272]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1773188506]
+environment = SubResource("Environment_h2yge")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=603277383]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 3.4590008, 0)
+shadow_enabled = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1585251450]
+transform = Transform3D(1, 0, 0, 0, 0.68345064, 0, 0, 0, 1, 0, -0.36498243, -10.269196)
+use_collision = true
+size = Vector3(9.383789, 1.2312012, 13.512566)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGBox3D2" unique_id=1205581763]
+transform = Transform3D(-0.003852948, 5.6411934, 0, -0.546419, -0.039777584, 0, 0, 0, 2.171636, 0.03772366, 1.0892177, -0.48945522)
+operation = 2
+use_collision = true
+radius = 2.6274414
+sides = 20
+
+[node name="ProtoController" parent="." unique_id=806122109 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1789558, 0.6095661, 0.12001419)
+can_sprint = true
+can_freefly = true
+input_left = "move_left"
+input_right = "move_right"
+input_forward = "move_up"
+input_back = "move_down"
+input_jump = "jump"
+input_sprint = "run"
+input_freefly = "noclip"
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2124023576]
+transform = Transform3D(1, 0, 0, 0, 8.631646, 0, 0, 0, 1, 0, -0.36544695, -0.023986816)
+use_collision = true
+size = Vector3(9.383789, 0.09765625, 7.0809326)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=1089169000]
+transform = Transform3D(1, 0, 0, 0, 7.6715465, 0, 0, 0, 1, 0, -0.36468726, -35.74702)
+use_collision = true
+size = Vector3(49.759766, 0.109375, 37.528748)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=1529837751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6999512, -27.064095)
+use_collision = true
+size = Vector3(20.556885, 6.3999023, 0.54003906)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="CSGBox3D4" unique_id=143477697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9230957, -0.10143089)
+operation = 2
+size = Vector3(3.1816406, 4.553711, 2.3945313)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=884426896]
+transform = Transform3D(-0.0042237355, 0, 0.99999106, 0, 1, 0, -0.99999106, 0, -0.0042237355, 9.964215, 2.6999512, -37.607754)
+use_collision = true
+size = Vector3(20.556885, 6.3999023, 0.54003906)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="." unique_id=651243318]
+transform = Transform3D(-0.0042237355, 0, 0.99999106, 0, 1, 0, -0.99999106, 0, -0.0042237355, -10.053734, 2.6999512, -37.607754)
+use_collision = true
+size = Vector3(20.556885, 6.3999023, 0.54003906)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="." unique_id=456750833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09418011, 2.6999512, -48.155594)
+use_collision = true
+size = Vector3(20.556885, 6.3999023, 0.54003906)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="." unique_id=528803828]
+transform = Transform3D(1, 0, 0, 0, 7.6715465, 0, 0, 0, 1, 0, 6.248098, -37.6107)
+use_collision = true
+size = Vector3(20.541016, 0.109375, 21.634514)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=783840422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8535397, -35.74702)
+light_color = Color(1, 0, 0, 1)
+light_energy = 7.761
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=111592646]
+transform = Transform3D(0.022934375, 0, 0, 0, 0.022934375, 0, 0, 0, 0.022934375, 0, 0, -35.387634)
+mesh = ExtResource("2_0xm2m")
