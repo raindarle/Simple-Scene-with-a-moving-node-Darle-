@@ -313,3 +313,26 @@ Red lights added within the building.
 
 Godot Engine v4.5.1
 macOS (Apple M1)
+
+# Week 4 :Installers for your games for windows and android devices (Darle - F Sat (4:30 PM - 7:00 PM)
+## Description
+
+In this activity we showcase the exporting of the projects in Windows and Android devices.
+
+## Screenshots
+
+![windows version](https://github.com/user-attachments/assets/347a4050-d6f6-4904-9032-53949544d934)
+
+
+ ## Instructions to Run
+	1.	Open Godot Engine v4.5.1.
+	2.	Open the project folder containing project.godot.
+	3.	Run the game.tscn scene.
+	4.	Adjust movement speed or jump force in the Inspector if needed.
+
+
+## Tools Used
+
+Godot Engine v4.5.1
+macOS (Apple M1)
+
