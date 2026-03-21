@@ -336,3 +336,6 @@ In this activity we showcase the exporting of the projects in Windows and Androi
 Godot Engine v4.5.1
 macOS (Apple M1)
 
+# Week 4 Activity 1 Multiplayer (basic cloud server) (Darle - F Sat (4:30 PM - 7:00 PM)
+![ezgif-4647d23944f0c553](https://github.com/user-attachments/assets/1f7ec76a-ae62-4543-8588-4a1a55cac50a)
+
